@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins';
+  background: #F8F8F8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: #3C1147;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logoText {
+  color: #FF2C5E;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a {
+  display: block;
+  padding: 0 1em;
+}
+
+.hero {
+  background: #111B38;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.skillsSection {
+  background-image: url("/My Portfolio/Media/project section background.svg");
+  background-repeat: no-repeat;
+  background-size: fit;
+  left: 0;
+  right: 0;
+}
+
+.skills-container ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.skills-container ul li .icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.skills-container ul li .icon-container.one {
+  width: 100px;
+}
+
+.skills-container ul li .icon-container.two {
+  width: 100px;
+}
+
+.skills-container ul li .icon-container.three {
+  width: 60px;
+}
+
+.title-skill {
+  font-weight: bold;
+}
+
+.descripton-skill {
+  margin-bottom: 2em;
+}
+
+.portfolioSection {
+  background: #F8F8F8;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.footer {
+  background: #3C1147;
+  height: 400px;
+  position: relative;
+}
+
+.footer h2 {
+  color: #E0E0E0;
+}
+
+.footer .main {
+  background: #3C1147;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .copyright {
+  background: #3C1147;
+  color: #DB2651;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+.footer .footer-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.footer .footer-section.quikLinks {
+  color: white;
+  padding: 25px;
+  font-size: large;
+}
+
+.footer .footer-section.about {
+  color: white;
+  padding: 25px;
+  font-size: large;
+}
+
+.footer .footer-section.contactForm {
+  color: white;
+  padding: 25px;
+  font-size: large;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skillsSection {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+  .portfolioSection {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    height: 90vh;
+  }
+  section {
+    padding: 4em;
+  }
+  .portfolioSection img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em;
+  }
+  header .logoText {
+    color: #FF2C5E;
+    font-weight: bold;
+    margin-left: 200px;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 200px;
+  }
+  header a {
+    display: block;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+  }
+  .hero .content {
+    margin-top: 150px;
+    margin-left: 300px;
+    text-align: left;
+  }
+  .hero .main-text {
+    font-size: 70px;
+    margin-top: -20px;
+    font-weight: bold;
+  }
+  .hero .lower-text {
+    margin-top: -70px;
+    font-size: 30px;
+    color: #E0E0E0;
+  }
+  .hero .main-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .main-button ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .main-button button {
+    display: block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .hero .main-button .border-btn {
+    border: 1px solid-black;
+    background: #111B38;
+    border-color: white;
+    color: white;
+    border-radius: 0.5;
+    font-size: 18px;
+  }
+  .hero .main-button .filled-btn {
+    background: #FA2B5C;
+    color: white;
+    border-radius: 8px;
+    margin-left: 30px;
+    border: none;
+  }
+  .hero .main-links-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+  }
+  .hero .main-links-btn ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .main-links-btn a {
+    display: block;
+    font-size: large;
+  }
+  .hero .main-links-btn a:hover {
+    color: #FA2B5C;
+  }
+  .hero .main-links-btn .github {
+    margin-left: 30px;
+  }
+  .hero .main-links-btn .linkedin {
+    margin-left: 30px;
+  }
+  .aboutsection {
+    text-align: left;
+    height: 80vh;
+    margin-left: 1040px;
+    margin-top: 150px;
+  }
+  .aboutsection .aboutButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .aboutsection .aboutButton ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutsection .aboutButton button {
+    display: inline-block;
+    padding: 15px 32px;
+    font-size: 20px;
+  }
+  .aboutsection .aboutButton .aboutme-btn {
+    color: white;
+    background: #FF2C5E;
+    border: none;
+    border-radius: 4px;
+  }
+  .aboutsection .aboutButton .skills-btn {
+    color: #FF2C5E;
+    background: white;
+    border: none;
+  }
+  .aboutsection .aboutMe-text p {
+    font-size: 30px;
+    color: #615A63;
+  }
+  .skillsSection {
+    background-size: cover;
+    left: 0;
+    width: 100vw;
+    margin-left: -15px;
+  }
+  .skillsSection .head {
+    color: #FF8E1C;
+    margin-top: -30px;
+  }
+  .skillsSection .skills-container .skill-container {
+    height: 100px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    place-content: center;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
