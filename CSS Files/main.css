@@ -69,7 +69,7 @@ section {
 }
 
 .skillsSection {
-  background-image: url("/My Portfolio/Media/project section background.svg");
+  background-image: url("/reshav-s-Portfolio/Media/project section background.svg");
   background-repeat: no-repeat;
   background-size: fit;
   left: 0;
@@ -96,11 +96,11 @@ section {
 }
 
 .skills-container ul li .icon-container.two {
-  width: 100px;
+  width: 60px;
 }
 
 .skills-container ul li .icon-container.three {
-  width: 60px;
+  width: 100px;
 }
 
 .title-skill {
@@ -224,7 +224,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1920px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,6 +384,9 @@ section {
         grid-template-columns: repeat(3, auto);
     place-content: center;
     margin: 0 auto;
+  }
+  .skillsSection .skills-container .skill-container .transition1 {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */
